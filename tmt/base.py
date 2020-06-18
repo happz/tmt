@@ -172,6 +172,7 @@ class Test(Node):
         # Test execution data
         'test',
         'path',
+        'type',
         'manual',
         'require',
         'recommend',
@@ -216,8 +217,9 @@ class Test(Node):
         for key in self._keys:
             setattr(self, key, self.node.get(key))
 
-        # Path defaults to the node name
+        # Path defaults to the node name, test type to 'shell'
         self._check('path', expected=str, default=self.name)
+        self._check('type', expected=str, default='shell')
 
         # Check that lists are lists or strings, listify if needed
         for key in ['component', 'contact', 'require', 'recommend', 'tag']:
