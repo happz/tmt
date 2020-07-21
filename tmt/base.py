@@ -25,7 +25,7 @@ from tmt.utils import verdict
 from fmf.utils import listed
 from click import echo, style
 
-DEFAULT_TEST_DURATION = '5m'
+DEFAULT_TEST_DURATION = '3h'
 
 class Node(tmt.utils.Common):
     """

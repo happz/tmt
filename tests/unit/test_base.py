@@ -34,7 +34,7 @@ def test_test_defaults():
     assert test.path == '/smoke'
     assert test.require == list()
     assert test.environment == dict()
-    assert test.duration == '5m'
+    assert test.duration == '3h'
     assert test.enabled == True
     assert test.result == 'respect'
     assert test.tag == list()

@@ -9,7 +9,7 @@ description:
     maximum time for test execution. If the limit is exceeded the
     running test is killed by the test harness. Use the same
     format as the ``sleep`` command. Should be a ``string``. The
-    default value is ``5m``.
+    default value is ``3h``.
 
 example: |
     duration: 3m
